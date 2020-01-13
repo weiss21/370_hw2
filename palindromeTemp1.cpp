@@ -9,18 +9,17 @@
 #include <iostream>
 #include <string>
 #include <cstring>
-
+#include <cmath>
 using namespace std;
 
 int main() {
     
-    char *copystr;
     string input;
     
     cout << "Input string: ";
     cin >> input;
     
-    copystr = new (nothrow) char[input.length()]; //char array for input string. Has to be after input is chosen.
+    char copystr[input.size()]; //char array for input string. Has to be after input is chosen.
     strcpy(copystr, input.c_str()); //copying string into character array
     
     int front, back;
@@ -49,6 +48,5 @@ int main() {
     else
         cout << "No, it is not a Palindrome" << endl; 
         
-    delete[] copystr;
     return 0;
 }
