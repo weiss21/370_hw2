@@ -26,9 +26,10 @@ int main() {
     int front, back;
     back = strlen(copystr) - 1;
     
-    cout << "\nfront is  is: " << front << endl;
-    cout << "\nback is: " << back << endl;
-    while(front <= back){
+    //cout << "\nfront is  is: " << front << endl;
+    //cout << "\nback is: " << back << endl;
+    
+    while(front <= back){   //while front position in array is less than or equal to back position it continues.
         
         if(copystr[front] == copystr[back]){
             back--;
@@ -41,9 +42,10 @@ int main() {
     
     //cout << "\ninput is: " << copystr << endl;
     //cout << "\narray count is: " << sizeof(copystr) << endl;
-    cout << "\nfront is  is: " << front << endl;
-    cout << "\nback is: " << back << endl;
+    //cout << "\nfront is  is: " << front << endl;
+    //cout << "\nback is: " << back << endl;
 
+    //if while loop ended to completion while front is ahead then it is a palindrome. Else it is not.
     if (front > back) 
         cout << "Yes, it is a Palindrome" << endl; 
     else

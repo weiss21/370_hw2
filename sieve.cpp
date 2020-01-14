@@ -15,14 +15,14 @@ using namespace std;
 
 int main(){
     
-    int *p; //ptr to hold value
+    int *p; //ptr to hold value, dynamically
     int number;
     vector<int> x;
     
     cout << "Input number: ";
     cin >> number;
     
-    p = new (nothrow) int[number + 1]; //number + 1 for array starts at 0
+    p = new int[number + 1]; //number + 1 for array starts at 0
     for(int i = 2; i <= number; i++){
         p[i] = i;
     }
